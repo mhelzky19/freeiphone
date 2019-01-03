@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".theImage img").click(function(){var a=$(this).parent().attr("id")=="product-holder1"?"product-holder2":"product-holder1";console.log(a);$(this).fadeOut();$("#"+a+" img").fadeIn()})})

@@ -1,0 +1,1 @@
+(function(a,b,c){var d,e=a.getElementsByTagName(b)[0];if(a.getElementById(c)){return}d=a.createElement(b);d.id=c;d.src="https://connect.facebook.net/en_US/all.js#xfbml=1";e.parentNode.insertBefore(d,e)})(document,"script","facebook-jssdk")

@@ -1,0 +1,384 @@
+/* html5 reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:separate;border-spacing:0}
+caption, th, td {text-align:left;font-weight:normal;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+/* layout */
+body {
+	background: url("img/background.jpg");
+    background-position: 0 0px;
+    background-repeat: repeat;
+    font: 13px Arial,sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+}
+a {
+    color: #000000;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 1;
+}
+.body p a {
+    color: #E3272A;
+}
+.body p a:hover {
+    text-decoration: underline;
+}
+/* header */
+#header {
+	background-image: url("img/sprite-dvL.png");
+	background-repeat: no-repeat;
+	background-position: 0 -404px;
+	height: 114px;
+	margin: 0 auto;
+	position: relative;
+	width: 585px;
+	top: 33px;
+	z-index: 99999;
+	left: 1px;
+}
+#header #header-content {
+	height: 71px;
+	margin: 0 auto;
+	position: relative;
+	width: 366px;
+	top: 30px;
+}
+.logo {
+	background-image: url("img/logo.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	width: 366px;
+	height: 71px;
+	opacity: 1.0;
+	padding: 0 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-khtml-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.logo:hover {
+    opacity: 0.6;
+}
+/* middle content */
+.wrapper {
+	height: 660px;
+	margin: 0 auto;
+	position: relative;
+	width: 585px;
+	padding-top: 20px;
+}
+.bg-holder {
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	width: 585px;
+	top: -62px;
+}
+#content-bg {
+	background: url("img/inner-background.png") repeat-y;
+	height: 750px;
+	margin: 0 auto;
+	position: absolute;
+	width: 585px;
+	border-style: solid;
+	border-color: #B5B5B5;
+	border-width: 1px;
+	border-radius: 3px;
+}
+#pick-color {
+	background-image: url("img/pick.png");
+	background-repeat: no-repeat;
+	height: 23px;
+	margin: 0 auto;
+	position: relative;
+	width: 483px;
+	top: 42px;
+}
+#product-holder {
+	height: 242px;
+	width: 585px;
+	position: relative;
+	top: 35px;
+}
+#product-holder1 {
+	background: url("img/3month-h.png");
+	background-repeat: no-repeat;
+	height: 242px;
+	width: 194px;
+	position: absolute;
+	top: 40px;
+	left: 62px;
+	cursor: pointer;
+}
+#product-holder2 {
+	background: url("img/12month-h.png");
+	background-repeat: no-repeat;
+	height: 242px;
+	width: 194px;
+	position: absolute;
+	top: 40px;
+	left: 328px;
+	cursor: pointer;
+}
+#shelf {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -631px;
+	background-repeat: no-repeat;
+	height: 54px;
+	width: 585px;
+	position: relative;
+	margin: 0 auto;
+	top: 70px;
+	left: 1px;
+}
+#shelf-text {
+	background-image: url("img/shelf-text.png");
+	background-repeat: no-repeat;
+	height: 16px;
+	margin: 0 auto;
+	position: relative;
+	width: 551px;
+	top: 10px;
+}
+/* Columns */
+#columns-bg {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -735px;
+	background-repeat: no-repeat;
+	height: 190px;
+	position: relative;
+	width: 529px;
+	top: 95px;
+	margin: 0 auto;
+}
+#steps {
+	background-image: url("img/sprite-dvL.png");
+	background-repeat: no-repeat;
+	height: 65px;
+	position: relative;
+	width: 168px;
+	top: 5px;
+	z-index: 16;
+	margin: 0 auto;
+}
+.step1 {
+	background-position: 0px -975px;
+}
+.step2 {
+	background-position: -174px -975px;
+}
+.step3 {
+	background-position: -348px -975px;
+}
+#columns {
+	margin: 0 auto;
+	position: relative;
+	top: -132px;
+}
+section#column1 {
+	float: left;
+	height: 160px;
+	margin-left: 30px;
+	padding: 20px 0;
+	width: 176px;
+}
+#column2 {
+	float: left;
+	height: 160px;
+	padding: 20px 0;
+	width: 175px;
+}
+#column3 {
+	float: right;
+	height: 160px;
+	margin-right: 28px;
+	padding: 20px 0;
+	width: 176px;
+}
+.column-title {
+    height: 20px;
+    text-align: center;
+}
+.column-description {
+    height: 36px;
+    left: 62px;
+    position: relative;
+    text-align: center;
+    top: 8px;
+    width: 224px;
+}
+.column-content {
+    height: 58px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+}
+.column-content-choice {
+    height: 58px;
+    position: relative;
+    text-align: center;
+    top: 12px;
+}
+/* Share Button*/
+.share-position {
+	height: 22px;
+	margin: 0 auto;
+	width: 63px;
+	position: relative;
+	top: 22px;
+}
+#share {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -560px;
+	background-repeat: no-repeat;
+	height: 21px;
+	margin: 0 auto;
+	position: absolute;
+	width: 62px;
+	z-index: 16;
+}
+.share { 
+    opacity: 0.6;
+    padding: 0 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-khtml-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.share:hover {
+    opacity: 1.0;
+}
+/* Like Button */
+.fb-like {
+	width: 80px !important;
+	opacity: 0.6;
+	padding: 0 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-khtml-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	top: 22px;
+	position: relative;
+}
+.fb-like:hover {
+    opacity: 1.0;
+}
+/* proceed button */ 
+#proceed {
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	width: 158px;
+	top: 10px;
+}
+#proceed2 {
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	width: 158px;
+	top: 10px;
+
+}
+.button {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -151px;
+	background-repeat: no-repeat;
+	height: 36px; 
+    text-indent: -9999px;
+   	width: 122px;
+	margin: 0 auto;
+}
+.button2 {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -151px;
+	background-repeat: no-repeat;
+	height: 36px; 
+    text-indent: -9999px;
+   	width: 122px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.button2:hover {
+	background-position: 0 -65px;
+}
+/* scroll bar */
+::-webkit-scrollbar-thumb:vertical{background-color:#c2c2c2; height:100px}
+
+::-webkit-scrollbar-thumb:horizontal{background-color:#c2c2c2; height:10px}
+
+::-webkit-scrollbar{height:10px; width:10px; background-color:#5f5f5f}
+
+/* footer */
+* {margin: 0;}
+html, body {height: 100%;}
+.content {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -48px; /* Set footer height. */
+}
+footer, .push {
+	height: 48px; /* Set footer height. */
+	/* clear: both; */ /* Muti-column fix.*/
+}
+footer {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -306px;
+	background-repeat: no-repeat;
+	height: 48px;
+	margin: 0 auto;
+	position: relative;
+	width: 585px;
+	z-index: 16;
+	top: -86px;
+	left: 1px;
+}
+.copyrights {
+	width: 280px;
+	position: relative;
+	top: 26px;
+	font-size: 8pt;
+	margin: 0 7px;
+}
+.dvL {
+	margin: 0 4px;
+	width: 34px;
+	position: relative;
+	top: 9px;
+	float: right;
+}
+#creator {
+	background-image: url("img/sprite-dvL.png");
+	background-position: 0 -237px;
+	background-repeat: no-repeat;
+	height: 21px;
+	margin: 0 auto;
+	position: relative;
+	width: 34px;
+	z-index: 16;
+}
+/* Over-ride Activity */
+.fb_edge_widget_with_comment .fb_iframe_widget {
+	display: none !important;
+}
